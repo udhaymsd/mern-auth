@@ -6,6 +6,10 @@ import authRoutes from './routes/auth.routes.js'
 
 dotenv.config()
 
+// console.log("MONGO URI:", process.env.MONGO);
+// console.log("JWT SECRET:", process.env.JWT_SECRET);
+
+
 
 mongoose.connect(process.env.MONGO).then (() => {
     console.log('MongoDB Connected');
